@@ -17,6 +17,7 @@ grails.project.dependency.resolution = {
         mavenLocal()
         grailsCentral()
         mavenCentral()
+        grails.project.repos.default = "https://github.com/PreetiJasmine/grailsRepo"
     }
 
     dependencies {
