@@ -15,6 +15,12 @@ public class MessageRefinerUtil {
 
         // Avoid anything between marquee tags
         INPUT_MSG_PATTERNS.add(Pattern.compile("<marquee>(.*?)</marquee>", Pattern.CASE_INSENSITIVE));
+
+        // Remove any </marquee> tag
+        INPUT_MSG_PATTERNS.add(Pattern.compile("</marquee>", Pattern.CASE_INSENSITIVE));
+
+        // Remove any <marquee ...> tag
+        INPUT_MSG_PATTERNS.add(Pattern.compile("<marquee(.*?)>", Pattern.CASE_INSENSITIVE | Pattern.MULTILINE | Pattern.DOTALL));
     }
 
     /**
