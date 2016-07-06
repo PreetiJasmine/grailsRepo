@@ -1,6 +1,5 @@
 grails.project.class.dir = 'target'
 
-
 grails.project.dependency.resolver = "maven"
 
 grails.project.dependency.resolution = {

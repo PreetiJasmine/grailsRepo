@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
+ * Class that invokes the wrapper class to be executed once the request is received
+ *
  * Created by preetijasmine on 06/07/16.
  */
 public class RefinerFilter extends OncePerRequestFilter {
@@ -17,8 +19,6 @@ public class RefinerFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
-        // Wrap the filter with the new filter.
-        // Any requests to the HttpRequest or HttpResponse will go through the wrapper.
         chain.doFilter(new MessageRequestWrapper(request), response);
     }
 

@@ -6,6 +6,8 @@ import static org.hamcrest.CoreMatchers.is
 import static org.junit.Assert.assertThat
 
 /**
+ * Test Cases for MessageRefinerUtil class
+ *
  * Created by preetijasmine on 06/07/16.
  */
 class MessageRefinerUtilTest {

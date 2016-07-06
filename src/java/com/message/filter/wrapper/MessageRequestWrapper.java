@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 
 /**
+ * Class to refine the user parameter captured in the request object
+ *
  * Created by preetijasmine on 06/07/16.
  */
 public class MessageRequestWrapper extends HttpServletRequestWrapper {
