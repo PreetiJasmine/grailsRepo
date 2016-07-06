@@ -20,14 +20,7 @@ grails.project.dependency.resolution = {
         grails.project.repos.default = "https://github.com/PreetiJasmine/grailsRepo"
     }
 
-    dependencies {
-        compile('org.owasp.esapi:esapi:2.1.0') {
-            excludes 'antisamy', 'bsh-core', 'commons-beanutils-core', 'commons-collections', 'commons-configuration',
-                    'commons-fileupload', 'commons-io', 'jsp-api', 'junit', 'log4j', 'servlet-api', 'xom'
-        }
-    }
-
-    plugins {
+   plugins {
         build(":release:3.0.1",
               ":rest-client-builder:1.0.3", ":tomcat:7.0.50") {
             export = false

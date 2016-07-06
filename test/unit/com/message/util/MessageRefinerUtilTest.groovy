@@ -10,8 +10,6 @@ import static org.junit.Assert.assertThat
  */
 class MessageRefinerUtilTest {
 
-
-
     @Test
     public void refineNonMarqueeContent() {
         final String output = MessageRefinerUtil.refine("some-content<marquee>marquee-content</marquee>");

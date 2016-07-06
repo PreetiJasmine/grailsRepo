@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequestWrapper;
  */
 public class MessageRequestWrapper extends HttpServletRequestWrapper {
 
-    public MessageRequestWrapper(HttpServletRequest request) {
-        super(request);
+    public MessageRequestWrapper(HttpServletRequest servletRequest) {
+        super(servletRequest);
     }
 
     @Override
