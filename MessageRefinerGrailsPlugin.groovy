@@ -11,19 +11,17 @@ class MessageRefinerGrailsPlugin {
             "grails-app/views/**"
     ]
 
-    // TODO Fill in these fields
     def title = "Message Refiner Plugin" // Headline display name of the plugin
     def author = "Preeti Jasmine"
-    def authorEmail = ""
+    def authorEmail = "preeti.jasmine@tribalworldwide.co.uk"
     def description = '''\
-Plugin to refines user input for <marquee> tags to avoid XSS
+Grails Plugin that refines user input to remove any content embedded within <marquee> tags to avoid XSS
 '''
     def scm = [url: "https://github.com/PreetiJasmine/grailsRepo"]
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/message-refiner"
     def license = "APACHE"
-
 
     def doWithWebDescriptor = { xml ->
 

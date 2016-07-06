@@ -1,7 +1,8 @@
 <plugin name='message-refiner' version='0.1' grailsVersion='2.3 &gt; *'>
   <author>Preeti Jasmine</author>
+  <authorEmail>preeti.jasmine@tribalworldwide.co.uk</authorEmail>
   <title>Message Refiner Plugin</title>
-  <description>Plugin to refines user input for &lt;marquee&gt; tags to avoid XSS
+  <description>Grails Plugin that refines user input to remove any content embedded within &lt;marquee&gt; tags to avoid XSS
 </description>
   <documentation>http://grails.org/plugin/message-refiner</documentation>
   <type>MessageRefinerGrailsPlugin</type>
